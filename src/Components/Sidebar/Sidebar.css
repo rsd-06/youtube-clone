@@ -1,0 +1,74 @@
+.sidebar{
+    background:#fff;
+    width: 15%;
+    /* 15% width of the Parent Container, which is Home Page. */
+    height: 100vh;
+    /* Only takes the Screen height, Hence No Scroll For this Side bar. */
+    position:fixed;
+    /* Position is fixed, Hence even with Scroll on the DOM, the Sidebar will be fixed on the screen. */
+    top: 0;
+    /* Fixed Position is 0 Distance from the Top! */
+    padding-left: 2%;
+    /* As Box-sizing : Border-box . Hence, Only the content inside would be given padding from left of 2%... Thus giving a good look. */
+    padding-top: 80px;
+}
+
+.shortcut-links img{
+    width: 20px;
+    /* Setting the width of the image */
+    margin-right: 20px;
+}
+
+.side-link{
+    display: flex;
+    /* The image and para tag would be made flex items. As by default, flex-direction is rows, Hence both image and para tag would come in the same line. */
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    /* Ensuring that the content is always visible, Whenever the screen-size is small I.e Making the content fit! */
+    flex-wrap: wrap;
+    /* Allowing the flex wrap So that when the Screen Size is very small, the content can wrap to the next line. */
+    cursor: pointer;
+}
+
+.sidebar hr{
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    width: 85%;
+}
+
+
+.subscribed-list h3{
+    font-size: 13px;
+    margin: 20px 0;
+    color: #5a5a5a;
+}
+
+.subscribed-list img{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+
+/* Style for Collapsed Sidebar  */
+
+.collapsed-sidebar{
+    width: 5%;
+    /* Changing the width of the Sidebar from 15% to 5% when getting collapsed. */
+}
+
+.collapsed-sidebar p{
+    display: none;
+    /* Hiding the p tag when collapsing. */
+}
+
+.collapsed-sidebar h3{
+    display: none;
+}
+
+.collapsed-sidebar hr{
+    width: 50%;
+    margin-bottom : 25px;
+}
